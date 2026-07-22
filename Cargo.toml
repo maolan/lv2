@@ -1,0 +1,19 @@
+[package]
+name = "maolan-lv2"
+version = "0.0.1"
+edition = "2024"
+description = "Pure Rust LV2 plugin discovery, metadata parsing, loading, and UI support for Maolan"
+license = "BSD-2-Clause"
+documentation = "https://docs.rs/maolan-lv2"
+homepage = "https://maolan.rs"
+repository = "https://github.com/maolan/lv2"
+
+[lib]
+name = "maolan_lv2"
+path = "src/lib.rs"
+
+[dependencies]
+dirs = "6"
+libloading = "0.9"
+oxrdf = "0.3"
+oxttl = "0.2"
