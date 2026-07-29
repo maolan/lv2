@@ -1185,18 +1185,6 @@ fn lv2_search_path() -> Vec<PathBuf> {
     }
 
     let home = dirs::home_dir();
-    #[cfg(target_os = "macos")]
-    {
-        let mut dirs = Vec::new();
-        if let Some(home) = &home {
-            dirs.push(home.join(".lv2"));
-            dirs.push(home.join("Library/Audio/Plug-Ins/LV2"));
-        }
-        dirs.push(PathBuf::from("/usr/local/lib/lv2"));
-        dirs.push(PathBuf::from("/usr/lib/lv2"));
-        dirs.push(PathBuf::from("/Library/Audio/Plug-Ins/LV2"));
-        dirs
-    }
     #[cfg(target_os = "windows")]
     {
         let mut dirs = Vec::new();
@@ -1209,7 +1197,7 @@ fn lv2_search_path() -> Vec<PathBuf> {
         let _ = home;
         dirs
     }
-    #[cfg(all(unix, not(target_os = "macos")))]
+    #[cfg(unix)]
     {
         let mut dirs = Vec::new();
         if let Some(home) = &home {

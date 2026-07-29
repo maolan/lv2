@@ -1,6 +1,6 @@
 [package]
 name = "maolan-lv2"
-version = "0.0.1"
+version = "0.0.2"
 edition = "2024"
 description = "Pure Rust LV2 plugin discovery, metadata parsing, loading, and UI support for Maolan"
 license = "BSD-2-Clause"
