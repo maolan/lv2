@@ -1,3 +1,5 @@
+#![cfg(not(miri))]
+
 //! Integration test with a synthetic bundle built in a temporary directory.
 
 mod common;
