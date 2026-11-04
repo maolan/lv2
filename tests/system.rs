@@ -1,3 +1,5 @@
+#![cfg(not(miri))]
+
 //! End-to-end test against the real LV2 bundles installed on the system.
 //!
 //! Skipped gracefully when the LV2 example amp is not installed.

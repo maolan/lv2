@@ -1,6 +1,6 @@
 [package]
 name = "maolan-lv2"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2024"
 description = "Pure Rust LV2 plugin discovery, metadata parsing, loading, and UI support for Maolan"
 license = "BSD-2-Clause"
@@ -13,7 +13,7 @@ name = "maolan_lv2"
 path = "src/lib.rs"
 
 [dependencies]
-dirs = "6.0.0"
+dirs = "7.0.0"
 libloading = "0.9.0"
-oxrdf = "0.3.3"
-oxttl = "0.2.3"
+oxrdf = "0.3.5"
+oxttl = "0.2.5"
